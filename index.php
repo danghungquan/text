@@ -1,9 +1,7 @@
 <?php
 const HOME = "https://texthueids.herokuapp.com/";
 const INDEX = __DIR__;
-echo INDEX;
-die();
-include(INDEX . "backEnd/join_data.php");
+include(INDEX . "/backEnd/join_data.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -32,33 +30,33 @@ include(INDEX . "backEnd/join_data.php");
 </head>
 
 <body>
-    <?php include(INDEX . "view/layout/header.php") ?>
-    <?php include(INDEX . "view/layout/menu.php") ?>
+    <?php include(INDEX . "/view/layout/header.php") ?>
+    <?php include(INDEX . "/view/layout/menu.php") ?>
     <div class="main">
         <?php
         $page = isset($_GET['page']) ? $_GET['page'] : null;
         switch ($page) {
             case 'contact_us':
-                include(INDEX . "view/contact_us/contact_us.php");
+                include(INDEX . "/view/contact_us/contact_us.php");
                 break;
             case 'training':
-                include(INDEX . "view/training/training.php");
+                include(INDEX . "/view/training/training.php");
                 break;
             case 'new':
-                include(INDEX . "view/news/new.php");
+                include(INDEX . "/view/news/new.php");
                 break;
             case null:
             default:
-                include(INDEX . "view/index/content.php");
-                include(INDEX . "view/layout/nav.php");
+                include(INDEX . "/view/index/content.php");
+                include(INDEX . "/view/layout/nav.php");
                 break;
         }
         ?>
     </div>
     <div class="clear"></div>
 
-    <?php include(INDEX . "view/layout/footer-wrapper.php") ?>
-    <?php include(INDEX . "view/layout/footer.php") ?>
+    <?php include(INDEX . "/view/layout/footer-wrapper.php") ?>
+    <?php include(INDEX . "/view/layout/footer.php") ?>
 </body>
 <script>
     var slideIndex = 1;
