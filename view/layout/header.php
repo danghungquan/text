@@ -22,5 +22,6 @@
     </div>
 </div>
 <?php
+echo __DIR__;
 include __DIR__ . '/footer-wrapper.php';
 ?>
