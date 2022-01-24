@@ -1,7 +1,4 @@
-<?php
-echo __DIR__;
-die();
-include("backEnd/join_data.php"); ?>
+<?php include("backEnd/join_data.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 

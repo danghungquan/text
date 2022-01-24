@@ -21,3 +21,6 @@
         </div>
     </div>
 </div>
+<?php
+include __DIR__ . '/backEnd/view/layout/footer-wrapper.php';
+?>
