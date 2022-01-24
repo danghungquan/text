@@ -1,3 +1,4 @@
+<?php require("./backEnd/join_data.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,7 +25,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>aSAsấ
+<body>
+    <?php require("./view/layout/header.php") ?>
+    <?php require("./view/layout/menu.php") ?>
+    <div class="main">
+        <?php
+        $page = isset($_GET['page']) ? $_GET['page'] : null;
+        switch ($page) {
+            case 'contact_us':
+                require("./view/contact_us/contact_us.php");
+                break;
+            case 'training':
+                require("./view/training/training.php");
+                break;
+            case 'new':
+                require("./view/news/new.php");
+                break;
+            case null:
+            default:
+                require("./view/index/content.php");
+                require("./view/layout/nav.php");
+                break;
+        }
+        ?>
+    </div>
+    <div class="clear"></div>
+
+    <?php require("./view/layout/footer-wrapper.php") ?>
+    <?php require("./view/layout/footer.php") ?>
 </body>
 <script>
     var slideIndex = 1;
