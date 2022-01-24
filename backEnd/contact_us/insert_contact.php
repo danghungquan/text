@@ -1,5 +1,5 @@
 <?php
-include(INDEX . "/backEnd/connectionDB.php");
+include INDEX . ("/backEnd/connectionDB.php");
 
 if (isset($_POST["btn_send_contact"])) {
     if (!empty($_POST["full_name"]) && !empty($_POST["email"]) && !empty($_POST["phone"]) && !empty($_POST["content"]) && !empty($_POST["message_details"])) {

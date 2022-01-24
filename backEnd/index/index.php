@@ -1,5 +1,5 @@
 <?php
-require_once(INDEX . "/backEnd/connectionDB.php");
+require_once INDEX . ("/backEnd/connectionDB.php");
 $sql = "SELECT p.`id`, p.`title`,p.`content`,p.`image`,p.`I_page`,p.`hot`,p.`create_at`,p.`update_at`,p.`status`,p.`is_delete` ,COUNT(c.id) AS total FROM `posts` AS p LEFT JOIN `comment` AS c ON p.id = c.id_ports WHERE p.`is_delete` = 1 AND p.`status` = 1 GROUP BY p.id LIMIT 7";
 $ports_select = mysqli_query($conn, $sql);
 

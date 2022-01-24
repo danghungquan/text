@@ -1,5 +1,5 @@
 <?php
-include(INDEX . '/backEnd/connectionDB.php');
+include INDEX . ('/backEnd/connectionDB.php');
 
 $sql = "SELECT * FROM `training_partners`";
 $training_partners = mysqli_query($conn, $sql);
