@@ -1,3 +1,4 @@
+<?php require("./backEnd/join_data.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,6 +26,8 @@
 </head>
 
 <body>
+    <?php require("./view/layout/header.php") ?>
+    <?php require("./view/layout/menu.php") ?>
     <div class="main">
         <?php
         $page = isset($_GET['page']) ? $_GET['page'] : null;
@@ -48,6 +51,8 @@
     </div>
     <div class="clear"></div>
 
+    <?php require("./view/layout/footer-wrapper.php") ?>
+    <?php require("./view/layout/footer.php") ?>
 </body>
 <script>
     var slideIndex = 1;
