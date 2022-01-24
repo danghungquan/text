@@ -184,7 +184,7 @@
             </div>
         </div>
         <div class="new-nav">
-            <?php include('/view/layout/nav.php'); ?>
+            <?php include(INDEX . 'view/layout/nav.php'); ?>
         </div>
     </div>
     <div class="space">.</div>

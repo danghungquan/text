@@ -23,12 +23,12 @@ if (isset($_POST["btn_send_contact"])) {
             $send_mail_guest = mail($email, $title, "Thanks! you have contacted us HueIDS.
 We will contact you as soon as possible.");
             if (($send_mail_admin == true) && ($send_mail_guest == true)) {
-                header("location: http://localhost/3s/?page=contact_us&success=1");
+                header("location: " . HOME . "/?page=contact_us&success=1");
             } else {
-                header("location: http://localhost/3s/?page=contact_us&success=0");
+                header("location: " . HOME . "/?page=contact_us&success=0");
             }
         } else {
-            header("location: http://localhost/3s/?page=contact_us&success=0");
+            header("location: " . HOME . "/?page=contact_us&success=0");
         }
     }
 }
