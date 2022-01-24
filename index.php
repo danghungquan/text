@@ -1,4 +1,7 @@
-<?php include("backEnd/join_data.php"); ?>
+<?php
+const INDEX = __DIR__;
+include(INDEX . "backEnd/join_data.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
