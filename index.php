@@ -1,4 +1,4 @@
-<?php require("backEnd/join_data.php"); ?>
+<?php require("/backEnd/join_data.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,16 +9,16 @@
     <title>Document</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="./css/css.css">
-    <link rel="stylesheet" href="./css/css-header.css">
-    <link rel="stylesheet" href="./css/css-menu.css">
-    <link rel="stylesheet" href="./css/css-nav.css">
-    <link rel="stylesheet" href="./css/css-content.css">
-    <link rel="stylesheet" href="./css/css-footer-w.css">
-    <link rel="stylesheet" href="./css/css-footer.css">
-    <link rel="stylesheet" href="./css/css-contact_us.css">
-    <link rel="stylesheet" href="./css/css-training.css">
-    <link rel="stylesheet" href="./css/css-new.css">
+    <link rel="stylesheet" href="/css/css.css">
+    <link rel="stylesheet" href="/css/css-header.css">
+    <link rel="stylesheet" href="/css/css-menu.css">
+    <link rel="stylesheet" href="/css/css-nav.css">
+    <link rel="stylesheet" href="/css/css-content.css">
+    <link rel="stylesheet" href="/css/css-footer-w.css">
+    <link rel="stylesheet" href="/css/css-footer.css">
+    <link rel="stylesheet" href="/css/css-contact_us.css">
+    <link rel="stylesheet" href="/css/css-training.css">
+    <link rel="stylesheet" href="/css/css-new.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
@@ -26,33 +26,33 @@
 </head>
 
 <body>
-    <?php require("view/layout/header.php") ?>
-    <?php require("view/layout/menu.php") ?>
+    <?php require("/view/layout/header.php") ?>
+    <?php require("/view/layout/menu.php") ?>
     <div class="main">
         <?php
         $page = isset($_GET['page']) ? $_GET['page'] : null;
         switch ($page) {
             case 'contact_us':
-                require("view/contact_us/contact_us.php");
+                require("/view/contact_us/contact_us.php");
                 break;
             case 'training':
-                require("view/training/training.php");
+                require("/view/training/training.php");
                 break;
             case 'new':
-                require("view/news/new.php");
+                require("/view/news/new.php");
                 break;
             case null:
             default:
-                require("view/index/content.php");
-                require("view/layout/nav.php");
+                require("/view/index/content.php");
+                require("/view/layout/nav.php");
                 break;
         }
         ?>
     </div>
     <div class="clear"></div>
 
-    <?php require("view/layout/footer-wrapper.php") ?>
-    <?php require("view/layout/footer.php") ?>
+    <?php require("/view/layout/footer-wrapper.php") ?>
+    <?php require("/view/layout/footer.php") ?>
 </body>
 <script>
     var slideIndex = 1;
@@ -78,7 +78,7 @@
     }
 </script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 

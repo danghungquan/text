@@ -21,6 +21,3 @@
         </div>
     </div>
 </div>
-<?php
-include("./footer-wrapper.php");
-?>
