@@ -1,7 +1,7 @@
 <?php
 const HOME = "https://texthueids.herokuapp.com/";
 const INDEX = __DIR__;
-include INDEX . ("/backEnd/join_data.php");
+// include INDEX . ("/backEnd/join_data.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
