@@ -1,7 +1,7 @@
 <?php
 const HOME = "https://texthueids.herokuapp.com/";
 const INDEX = __DIR__;
-include(INDEX . "/backEnd/join_data.php");
+// include(INDEX . "/backEnd/join_data.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,8 +30,8 @@ include(INDEX . "/backEnd/join_data.php");
 </head>
 
 <body>
-    <?php include(INDEX . "/view/layout/header.php") ?>
-    <?php include(INDEX . "/view/layout/menu.php") ?>
+    <?php include(INDEX . "view/layout/header.php") ?>
+    <?php include(INDEX . "view/layout/menu.php") ?>
     <div class="main">
         <?php
         $page = isset($_GET['page']) ? $_GET['page'] : null;
