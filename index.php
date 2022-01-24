@@ -1,4 +1,3 @@
-<?php include("./backEnd/join_data.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,33 +25,10 @@
 </head>
 
 <body>
-    <?php include("./view/layout/header.php") ?>
-    <?php include("./view/layout/menu.php") ?>
     <div class="main">
-        <?php
-        $page = isset($_GET['page']) ? $_GET['page'] : null;
-        switch ($page) {
-            case 'contact_us':
-                include("./view/contact_us/contact_us.php");
-                break;
-            case 'training':
-                include("./view/training/training.php");
-                break;
-            case 'new':
-                include("./view/news/new.php");
-                break;
-            case null:
-            default:
-                include("./view/index/content.php");
-                include("./view/layout/nav.php");
-                break;
-        }
-        ?>
     </div>
     <div class="clear"></div>
 
-    <?php include("./view/layout/footer-wrapper.php") ?>
-    <?php include("./view/layout/footer.php") ?>
 </body>
 <script>
     var slideIndex = 1;
